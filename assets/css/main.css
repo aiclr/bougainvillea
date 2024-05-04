@@ -1,0 +1,41 @@
+@import url("./header.css");
+@import url("./keyframes.css");
+
+/**
+ * 一般优先使用 border-box，因为它可同时指定padding、width、border
+ * 起手可写如下代码
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  outline: 1px solid red;
+}
+
+/* 隐藏所有滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: #222;
+  font-family: "JetBrains Mono", sans-serif;
+  line-height: 1.4;
+  max-width: 100%;
+  display: list-item
+}
+
+header {
+  border-bottom: 1px solid #222;
+}
+
+footer {
+  border-top: 1px solid #222;
+  text-align: center;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}

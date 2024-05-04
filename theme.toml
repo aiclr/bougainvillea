@@ -1,0 +1,31 @@
+name = 'bougainvillea'
+license = 'MIT'
+licenselink = 'https://github.com/aiclr/bougainvillea/blob/main/LICENSE'
+description = 'Bougainvillea Blog Theme for hugo'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/aiclr/bougainvillea'
+
+# If you have a running demo of the theme
+demosite = 'https://aiclr.github.io/'
+
+# Taxonomy terms
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+# If the theme has multiple authors
+# authors = [
+#   {name = 'caddy', homepage = 'https://github.com/aiclr'},
+#   {name = 'Name of author', homepage = 'Website of author'}
+# ]
+
+# If the theme has a single author
+[author]
+  name = 'caddy'
+  homepage = 'https://github.com/aiclr'
+
+# If porting an existing theme
+[original]
+  author = 'caddy'
+  homepage = 'If porting an existing theme'
+  repo = 'https://github.com/aiclr/bougainvillea'
