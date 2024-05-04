@@ -1,6 +1,3 @@
-@import url("./header.css");
-@import url("./keyframes.css");
-
 /**
  * 一般优先使用 border-box，因为它可同时指定padding、width、border
  * 起手可写如下代码
