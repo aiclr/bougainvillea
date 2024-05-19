@@ -8,10 +8,12 @@
     </div>
     <div class="center">
         <h1 style="margin-bottom: 0.125rem;">{{ .Title }}</h1>
-        <p style="margin-bottom: 1.5rem; margin-left: 2rem;">
+        <p style="margin-bottom: 1.5rem; margin-right: 2rem;text-align: right;">
             <time datetime="{{ $dateMachine }}" dateHuman="{{$dateHuman}}">{{ $dateFmt }}</time>
-        </p>
-        {{ .Content }}
+        </p>       
+        <div class="detail"></div>
+            {{ .Content }} 
+        </div>
     </div>
     <div class="right">
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
