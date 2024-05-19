@@ -3,10 +3,16 @@
   <div class="left">list .left</div>
   <div class="center">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <div class="content">
+      {{ .Content }}
+    </div>
     {{ range .Pages }}
+    <div class="link-title">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+      <div class="summary">
+        {{ .Summary }}
+      </div>
+    </div>
     {{ end }}
   </div>
   <div class="right">list.right</div>
