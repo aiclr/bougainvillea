@@ -122,6 +122,8 @@ a {
   border: 0.15rem dashed #00000033;
   margin: 0.8rem;
   padding: 0.2rem;
+  max-width: fit-content;
+  overflow: scroll;
 }
 
 .content {
