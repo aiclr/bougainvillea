@@ -86,31 +86,35 @@ a {
 .home .left,
 .list .left,
 .single .left {
-  float: left;
-  position: fixed;
-  left: 4.5rem;
-  max-width: 15%;
-  padding: 0.2rem 0.2rem 0 0.2rem;
+  flex: 1.5;
+  margin: 0 1rem 0 1rem;
+  background-color: #ffffffb9;
+  text-align: center;
+  overflow-y: scroll;
+  max-height: 81rem;
+  border-radius: 0.5rem;
 }
 
 .home .center,
 .list .center,
 .single .center {
+  flex: 7;
   background-color: #ffffffb9;
-  position: absolute;
   overflow-y: scroll;
-  width: 70%;
-  height: calc(100% - 10rem);
-  border-radius: 1%;
+  max-height: 81rem;
+  border-radius: 1rem;
 }
 
 .home .right,
 .list .right,
 .single .right {
-  float: left;
-  position: fixed;
-  right: 4.5rem;
-  max-width: 15%;
+  flex: 1.5;
+  margin: 0 1rem 0 1rem;
+  background-color: #ffffffb9;
+  text-align: center;
+  overflow-y: scroll;
+  max-height: 81rem;
+  border-radius: 0.5rem;
 }
 
 .single .left ul,
