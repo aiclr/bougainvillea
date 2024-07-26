@@ -1,6 +1,12 @@
 {{ define "main" }}
 <div class="list">
-  <div class="left">list .left</div>
+  <div class="left">
+    {{ range .Pages }}
+    <div class="link-title">
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </div>
+    {{ end }}
+  </div>
   <div class="center">
     <h1>{{ .Title }}</h1>
     <div class="content">
@@ -15,6 +21,12 @@
     </div>
     {{ end }}
   </div>
-  <div class="right">list.right</div>
+  <div class="right">
+    {{ range .Pages }}
+    <div class="link-title">
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </div>
+    {{ end }}
+  </div>
 </div>
 {{ end }}

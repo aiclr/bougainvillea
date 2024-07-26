@@ -4,15 +4,19 @@
 {{ $dateFmt := .Date | time.Format "Monday January 02 2006" }}
 <div class="single">
     <div class="left">
-        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        {{ range .Parent.Pages }}
+        <div class="link-title">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </div>
+        {{ end }}
     </div>
     <div class="center">
         <h1 style="margin-bottom: 0.125rem;">{{ .Title }}</h1>
         <p style="margin-bottom: 1.5rem; margin-right: 2rem;text-align: right;">
             <time datetime="{{ $dateMachine }}" dateHuman="{{$dateHuman}}">{{ $dateFmt }}</time>
-        </p>       
+        </p>
         <div class="detail">
-            {{ .Content }} 
+            {{ .Content }}
         </div>
     </div>
     <div class="right">
