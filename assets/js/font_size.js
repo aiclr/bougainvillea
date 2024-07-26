@@ -1,8 +1,11 @@
 // 字体随窗口大小改变
-const docEL = document.documentElement;
+window.addEventListener('DOMContentLoaded', set_rem_unit);
+window.addEventListener('resize', set_rem_unit);
 
 function set_rem_unit() {
+    const docEL = document.documentElement;
     const clientWidth = docEL.clientWidth;
+    console.log(clientWidth)
     let rem;
     if (clientWidth < 576) {
         rem = 10;
@@ -30,12 +33,3 @@ function set_rem_unit() {
     }
     docEL.style.fontSize = rem + 'px';
 }
-
-set_rem_unit();
-
-window.addEventListener('resize', set_rem_unit);
-window.addEventListener('pageshow', function e() {
-    if (e.persisted) {
-        set_rem_unit();
-    }
-})
